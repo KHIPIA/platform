@@ -13,8 +13,7 @@ spec:
   infrastructure:
     annotations:
       service.beta.kubernetes.io/azure-load-balancer-internal: "true"
-      # Opcional: IP fija para el backend de APIM (libre y dentro de la subnet de nodos)
-      # service.beta.kubernetes.io/azure-load-balancer-ipv4: "10.224.0.50"
+      service.beta.kubernetes.io/azure-load-balancer-ipv4: "10.224.0.6"
   listeners:
     - name: http
       port: 80
